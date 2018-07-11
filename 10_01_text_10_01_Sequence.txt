@@ -1,0 +1,19 @@
+Task 10_01_Sequence
+You are given a sequence of integer numbers. 
+Find the length of the longest subsequence of increasing numbers in the sequence
+Input
+The first line of the standard input will contain a single positive integer number N – the number of integers.
+The second line of the standard input will contain exactly N integer values, separated by single spaces – the values.
+Output
+A single line, representing the length of the longest subsequence of increasing values.
+Restrictions
+0 < N <= 1000; 
+The total running time of your program should be no more than 0.1s
+The total memory allowed for use by your program is 16MB
+
+Example I/O
+
+Input:	
+13
+25 7 9 11 13 15 17 21 23 27 3 5 19	
+Output: 9
