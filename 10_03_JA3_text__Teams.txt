@@ -1,0 +1,82 @@
+Task 10_03_Teams
+You are given a list of teams and their members, competing in a league for the Counter-Attack: Globally Offensive game 
+(yep, still shamelessly avoiding copyright). A player can be a member of multiple teams in the league, and each team can participate in multiple games 
+throughout the league. Player scores are determined by the number of victories their team has throughout the league.
+Write a program, which, given a list of teams and the players in those teams, and given another list with the winner for each game played, 
+prints out the player scores, sorted by player name.
+Input
+The first line of the standard input contains a single integer number T – the number of teams.
+Each of the following T lines describes a team. Each line begins with the team name (lowercase English characters), followed by 
+a positive integer M – the number of players in the team, and followed by M player names (lowercase English characters). 
+These are separated by single spaces.
+The next line contains a single integer G – the number of games played in the league.
+Each of the following G lines describes the result of a game – i.e. the name of the team that won.
+Output
+A single line containing integers, separated by single spaces – the scores of the players, ordered by the lexicographical order of the player names.
+
+Restrictions
+T <= 100; G <= 100; 
+Team and player names will contain only lowercase English letters (a-z) and will be at most 10 characters long. 
+There will be no more than 10 members per team.
+No player will appear twice in the same team (but a player can be a member of multiple different teams)
+
+Hint: use std::cin.sync_with_stdio(false); std::cout.sync_with_stdio(false); 
+at the start of your main() function to speed-up console input and output (if you’re using cin and cout for reading/writing)
+
+The total running time of your program should be no more than 0.1s
+The total memory allowed for use by your program is 5MB
+
+Example I/O
+Input01: 
+3
+A 3 a b c
+B 2 d e
+C 4 a b c d
+4
+A
+A
+C
+A 	
+
+Output:
+4 4 4 1 0
+	
+Explanation:
+a, b, and c have 4 victories with teams A (3) and C (1).
+d has 1 victory with team C.
+e has no victories.
+
+Input02:
+4
+skplaying 5 risen ref warmzera burger bolt
+nnjsinhats 3 getleft lake toastberg
+mixone 2 risen getleft
+mixtwo 2 lake toastberg
+9
+skplaying
+mixone
+mixone
+skplaying
+skplaying
+nnjsinhats
+skplaying
+nnjsinhats
+mixone	
+
+Output:
+4 4 5 2 4 7 2 4	
+
+Explanation:
+skplaying has 4 victories
+mixone has 3 victories
+nnjsinhats has 2 victories
+sorted by player names:
+bolt = 4
+burger = 4
+getleft = 3 + 2 = 5
+lake = 2
+ref = 4 
+risen = 4 + 3 = 7
+toastberg = 2
+warmzera = 4
+
