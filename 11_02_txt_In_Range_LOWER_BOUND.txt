@@ -1,0 +1,22 @@
+11_02_In_Range_LOWER_BOUND
+You are given a line of integer numbers, followed by another line containing exactly two numbers – the start (inclusive) and 
+end (exclusive) of a range (start will always be less than end). Write a program that prints all numbers from the first line that fall 
+into the range [start, end), in increasing order, without duplicates.
+
+Input1:	
+1 42 13 1 13 10 9 7 4 105
+7 12	
+
+Output:
+7 9 10
+
+Input2:
+1 4 7 9 10 13 42 105
+Output:   -
+
+Input3:	
+1 42 13 1 13 10 9 4 105
+7 13	
+
+Output:
+9 10

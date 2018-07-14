@@ -1,0 +1,25 @@
+11_03_Matches_SETs_and_FIND
+You are given two rows of integer numbers. Print a single line containing all the numbers that appear both in the first and the second row 
+(without repetitions), sorted in increasing order. If there are no numbers that appear in both rows, print no matches.
+
+Examples
+Input1:	
+1 42 13 1 13 10 9 7 4 105
+7 7 19 1 106 42 -9 1 1 1 1 1 1	
+
+Output:
+1 7 42	
+
+Input2:
+1
+2
+
+Output:
+no matches
+
+Input3:
+42
+42 42	
+
+Output:
+42
